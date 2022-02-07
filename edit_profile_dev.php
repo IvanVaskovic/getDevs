@@ -5,6 +5,10 @@ session_start();
 //if cookie already set
 if (isset($_COOKIE['email'])) {
     $_SESSION['email'] = $_COOKIE['email'];
+    $user = $conn->getUser($_POST['email']);
+    $_SESSION['user_type'] = $user['user_type'];
+    if ($_SESSION['user_type'] == 'dev') $_SESSION['id'] = $user['dev_id'];
+    if ($_SESSION['user_type'] == 'campany') $_SESSION['id'] = $user['company_id'];
 }
 
 //if email(user) not in session
