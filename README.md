@@ -30,4 +30,6 @@ The database is primarily initialized from ./database/get_dev_db.sql file. 
     // dev     => email: dev@dev;           pass: dev
     
 
-
+User instruction: 
+    
+    Copy whole project in www (for WAMP) of xtdocs (for XAMPP), make sure you have your local server running, and open index.html file.
