@@ -40,7 +40,7 @@ if (isset($_POST["submit"])) {
 
     //profile picture
     $profile_picture_path = $user_data['profile_picture'];
-    if (isset($_FILES["profile_picture"]) && $_FILES["profile_picture"]['tmp_name'] == 0) {
+    if (isset($_FILES["profile_picture"]) && $_FILES["profile_picture"]['error'] == 0) {
       $file = $_FILES['profile_picture'];
       $ext = substr($file['name'], -4);
       $profile_picture_path = './images/users-profile-pictures/' . $user_data['email'] . $ext;
