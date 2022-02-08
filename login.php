@@ -63,7 +63,7 @@
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div class="brand-logo">
+              <div class="brand-logo" onclick="location.href='./index.html';" style="cursor: pointer;">
                 <img src="images/logo_text_index.svg" alt="logo">
               </div>
               <h4>Hello! let's get started</h4>
